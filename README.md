@@ -9,8 +9,19 @@ Bingen am Rhein.
 ![image](https://github.com/Ruben-Lohberg/RubenOS/assets/84844633/b870ca1c-d151-4370-8a51-6e5b1493539f)
 
 
+- [RubenOS](#rubenos)
+  - [Goals and Design Philosophy](#goals-and-design-philosophy)
+  - [Project steps](#project-steps)
+  - [The current Version](#the-current-version)
+    - [Testing the OS in QEMU](#testing-the-os-in-qemu)
+    - [Debugging with gdb](#debugging-with-gdb)
+  - [Literature and helpful sources](#literature-and-helpful-sources)
+    - [Reading Ralf Brown's Interrupt List:](#reading-ralf-browns-interrupt-list)
 
-### Goals and Design Philosophy
+
+
+
+## Goals and Design Philosophy
 
 Zero external libraries, not even compiler libraries.
 - A simple kernel design, monolithic
@@ -27,7 +38,7 @@ Zero external libraries, not even compiler libraries.
     students to motivate them for C and operating systems design and
     development.
 
-### Project steps:
+## Project steps
 - Working through "Operating Systems: From 0 to 1" by Do Hoang Tu until 7.5,
   which includes reading a few hundred pages of the "Intel 64 and IA-32
   Architectures Software Developer's Manual" and learning about x86 assembly,
@@ -83,8 +94,7 @@ Zero external libraries, not even compiler libraries.
 - Cleanup and small pretty features
 
 
-**The current Version**
-
+## The current Version
 The current version is v13. It allows the creation, printing and execution of
 files.
 
@@ -93,7 +103,7 @@ file inside the 'external-functions' directory
 
 Run 'make help' for a helpful message
 
-**Testing the OS in QEMU**
+### Testing the OS in QEMU
 
 I develop and test the OS in WSL.
 Inside WSL, I run the OS on the QEMU virtual machine.
@@ -169,4 +179,6 @@ The "interrupts" directory contains an already combied "INTERRUP.LST" file. When
 running the RBIL Viewer (RBILVIEW.exe) the "open List" dialog can be used to
 browse the .LST file
 
-### "This is where the real game begins"
+---
+
+_**"This is where the real game begins"**_
