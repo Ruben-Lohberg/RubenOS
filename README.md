@@ -6,6 +6,10 @@ scratch.
 Made by Ruben Lohberg as a student project at University of Applied Sciences
 Bingen am Rhein.
 
+![image](https://github.com/Ruben-Lohberg/RubenOS/assets/84844633/b870ca1c-d151-4370-8a51-6e5b1493539f)
+
+
+
 ### Goals and Design Philosophy
 
 Zero external libraries, not even compiler libraries.
