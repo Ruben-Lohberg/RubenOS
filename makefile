@@ -60,12 +60,21 @@ debug:
 	$(RUN_COMMAND) -gdb tcp::26000 -S
 
 # delete build files, rebuild and run
-build-and-run: clean all run
+build-and-run: clean all run help
 
 # delete build files
 clean:
 	rm -rf build
 	make -C external-functions clean
 
-
+help:
+	@echo Welcome to the makefile for RubenOS. Here are some useful commands:
+	@echo  make: Compiles and builds RubenOS, creating an os binary, \
+	debug-info and data-floppy
+	@echo  make run: Runs RubenOS in qemu
+	@echo  make debug: Runs RubenOS in qemu with a gnu debugger server. \
+	Connect to it by running the gdb command in another terminal window. See \
+	\'.gdbinit\' for more info
+	@echo  make clean: Removes build files
+	@echo  make help: Shows this help messsage
 
