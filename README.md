@@ -95,7 +95,19 @@ Zero external libraries, not even compiler libraries.
 
 ### Possible next steps
 
-- 
+- Command history
+- Scrolling up and down
+- Graphics mode for a pretty ui
+- Mouse support
+- Command pipes
+- Dynamic memory allocation
+- Paging
+- Switching to user mode
+- Multithreading
+- Adding system calls in form of interrupts in order to provide an interface for
+  user programs.
+  - Adding user programs that use those interrupts
+  - Moving functionality from kernel to user programs
 
 
 ## The current Version
@@ -161,17 +173,13 @@ And continue to them with:
 
 [Teemu Voipio - How to read (and supposedly write) floppies](https://forum.osdev.org/viewtopic.php?t=13538)
 
-Nick Blundell Writing a Simple Operating System - from Scratch
-https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf
+[Nick Blundell Writing a Simple Operating System - from Scratch](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf)
 
-Erik Helin, Adam Renberg - The little book about OS development
-https://littleosbook.github.io/
+[Erik Helin, Adam Renberg - The little book about OS development](https://littleosbook.github.io/)
 
-Bran's Kernel development tutorials
-http://www.osdever.net/bkerndev/index.php
+[Bran's Kernel development tutorials](http://www.osdever.net/bkerndev/index.php)
 
-James M's Kernel development tutorials
-https://web.archive.org/web/20231214110833/http://www.jamesmolloy.co.uk/tutorial_html/index.html
+[James M's Kernel development tutorials](https://web.archive.org/web/20231214110833/http://www.jamesmolloy.co.uk/tutorial_html/index.html)
 
 Andrew S. Tanenbaum - Operating Systems. Design and Implementation
 
