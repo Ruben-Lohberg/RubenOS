@@ -32,7 +32,7 @@
  */
 static int test_command(int argc, char **argv)
 {
-    // getting rid of surpressed parameter warnings
+    // getting rid of suppressed parameter warnings
     (void)(argc);
     (void)(argv);
     print("Test function\n", DEFAULT_COLOR_SCHEME);
@@ -62,10 +62,10 @@ static int echo_command(int argc, char **argv)
 void kernel_main(void)
 {
 
-    print_at("Welcome to", 30, 10, DEFAULT_COLOR_SCHEME);
-    print_at("Ruben OS", 33, 11, DEFAULT_COLOR_SCHEME);
-    print_at("A custom Operating System", 33, 12, DEFAULT_COLOR_SCHEME);
-    print_at("\"This is where the real game begins\"", 25, 13, DEFAULT_COLOR_SCHEME);
+    print_at("Welcome to", 40, 10, DEFAULT_COLOR_SCHEME);
+    print_at("Ruben OS", 43, 11, DEFAULT_COLOR_SCHEME);
+    print_at("A custom Operating System", 43, 12, DEFAULT_COLOR_SCHEME);
+    print_at("\"This is where the real game begins\"", 35, 13, DEFAULT_COLOR_SCHEME);
     print("\n\n\n", 0);
     idt_install();
     irq_install();
@@ -85,7 +85,7 @@ void kernel_main(void)
     register_command("echo", echo_command);
     install_filesystem();
 
-    // looping forever. From here on out everythin happens with interrupts
+    // looping forever. From here on out everything happens with interrupts
     for (;;)
     {
         asm("hlt");

@@ -135,7 +135,7 @@ static int print_file_command(int argc, char **argv)
 {
     if (argc < 2)
     {
-        print("Error: Did not provide enough argumends!\n",
+        print("Error: Did not provide enough arguments!\n",
               DEFAULT_COLOR_SCHEME);
         return 1;
     }
@@ -179,7 +179,7 @@ static int execute_file_command(int argc, char **argv)
 {
     if (argc < 2)
     {
-        print("Error: Did not provide enough argumends!\n",
+        print("Error: Did not provide enough arguments!\n",
               DEFAULT_COLOR_SCHEME);
         return 1;
     }

@@ -12,6 +12,7 @@ Bingen am Rhein.
 - [RubenOS](#rubenos)
   - [Goals and Design Philosophy](#goals-and-design-philosophy)
   - [Project steps](#project-steps)
+    - [Possible next steps](#possible-next-steps)
   - [The current Version](#the-current-version)
     - [Testing the OS in QEMU](#testing-the-os-in-qemu)
     - [Debugging with gdb](#debugging-with-gdb)
@@ -31,12 +32,11 @@ Zero external libraries, not even compiler libraries.
 - Deadline for development: January, 26th 2024 (after three months of
   development + two months of prior research)
 - Then until the end of February: Creating two video presentations:
-    - One about assembly and how I used it in development. Goal is to motivate
-    beginning students for assembly and show aspects of its relevance in today's
-    world and the forseeable future.
+    - One about assembly and how I used it in development. Goal is to motivate beginning students for assembly and show aspects of its relevance in today's world and the forseeable future. 10-15min
     - One about C and operating systems design, for slightly more advanced
     students to motivate them for C and operating systems design and
-    development.
+    development. max 30min
+  - Deadline for that end of February
 
 ## Project steps
 - Working through "Operating Systems: From 0 to 1" by Do Hoang Tu until 7.5,
@@ -93,10 +93,13 @@ Zero external libraries, not even compiler libraries.
   the new version of the os working with my old bootloader. No more GRUB!
 - Cleanup and small pretty features
 
+### Possible next steps
+
+- 
+
 
 ## The current Version
-The current version is v13. It allows the creation, printing and execution of
-files.
+The current version allows the creation and printing of files as text, as well as the execution of files as raw binary. 
 
 For info about running external C programs inside RubenOS, see the README.md
 file inside the 'external-functions' directory
@@ -148,24 +151,27 @@ And continue to them with:
  
 ## Literature and helpful sources
 
-Do Hoang Tu - Operating Systems: From 0 to 1
-https://github.com/tuhdo/os01
+[Do Hoang Tu - Operating Systems: From 0 to 1](https://github.com/tuhdo/os01)
 
-Intel® 64 and IA-32 Architectures Software Developer’s Manual
-https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+[Intel® 64 and IA-32 Architectures Software Developer’s Manual](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)
 
-Ralf Brown's Interrupt List
-http://www.cs.cmu.edu/~ralf/files.html
+[Ralf Brown's Interrupt List](http://www.cs.cmu.edu/~ralf/files.html)
 
-The OSDev Wiki and the Bare Bones Tutorial
-https://wiki.osdev.org
-https://wiki.osdev.org/Bare_Bones
+[The OSDev Wiki and the Bare Bones Tutorial](https://wiki.osdev.org/Bare_Bones)
+
+[Teemu Voipio - How to read (and supposedly write) floppies](https://forum.osdev.org/viewtopic.php?t=13538)
 
 Nick Blundell Writing a Simple Operating System - from Scratch
 https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf
 
 Erik Helin, Adam Renberg - The little book about OS development
 https://littleosbook.github.io/
+
+Bran's Kernel development tutorials
+http://www.osdever.net/bkerndev/index.php
+
+James M's Kernel development tutorials
+https://web.archive.org/web/20231214110833/http://www.jamesmolloy.co.uk/tutorial_html/index.html
 
 Andrew S. Tanenbaum - Operating Systems. Design and Implementation
 
