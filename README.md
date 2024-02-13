@@ -189,9 +189,6 @@ The list can be dowloaded from http://www.cs.cmu.edu/~ralf/files.html
 To simplify reading the list, the COMBINE.COM program can be used (in an 16-Bit
 enviroment. I used DOS-BOX) to combine the INTERRUP files into one list which
 can be read with RBILVIEW.exe
-The "interrupts" directory contains an already combied "INTERRUP.LST" file. When
-running the RBIL Viewer (RBILVIEW.exe) the "open List" dialog can be used to
-browse the .LST file
 
 ---
 
